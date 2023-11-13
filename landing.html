@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+</head>
+
+<!-- link bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: grey; 
+        padding: 20px; 
+        border-radius: 5px;
+        height: 100%;
+        width: 37vh;
+        color: white;
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        background-color: gray; 
+        padding: 10px; 
+        border-radius: 5px; 
+        height: auto; 
+        margin-top: 10px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .button_stretch {
+        width: 100%;
+    }
+
+    .imgbox {
+        width: 100%; 
+        height: 45%; 
+        border-radius: 5px;
+    }
+
+    nav {
+        display: flex;
+        background-color: gray; 
+        border-radius: 5px; 
+        padding: 10px; 
+        justify-content: space-between; 
+        margin-bottom: 20px;
+    }
+
+    a {
+        margin: 0px 10px; 
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    body {
+        margin: 20px;
+    }
+</style>
+
+<body>
+
+    <!-- bagian navbar -->
+    <nav>
+        <div>
+            <a href="#" >Home</a>
+            <a href="transaksi.html" >Transaksi</a>
+        </div>
+        <a href="login.html" >Logout</a>
+    </nav>
+
+    <!-- div untuk gambar -->
+    <div style="display: flex; justify-content: center;">
+        <img style="height: 30vh; width: 100%; border-radius: 5px;" src="assets/WhatsApp Image 2023-11-06 at 09.35.13.jpeg" alt="gambar sekolah SMKN 2 Banjarmasin">
+    </div>
+
+    <!-- div untuk teks -->
+    <div style="margin: 20px 0px;">
+        <p>Daftar Paket Pencucian Mobil</p>
+    </div>
+
+    <!-- div untuk kotak pilihan paket -->
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+        <!-- kotak pertama -->
+            <div class="textbox">
+
+                <!-- div teks -->
+                <div class="text">
+                    <img src="assets/2018_Suzuki_Karimun_Wagon_R_GL_(front).jpg" alt="Suzuki Karimun" class="imgbox">
+                    <p>Cuci mobil kecil</p>
+                    <p>suzuki karimun, toyota agya, swift, ayla, jazz</p>
+                    <p>Rp. 40.000</p>
+                </div>
+
+                <!-- div button -->
+                <div class="button">
+                    <button class="button_stretch btn btn-secondary">Pilih Paket</button>
+                </div>
+                
+            </div>
+
+            <!-- kotak kedua -->
+            <div class="textbox">
+
+                <!-- div teks -->
+                <div class="text">
+                    <img src="assets/004604300_1639538901-0000460838.webp" alt="Honda CRV" class="imgbox">
+                    <p>Cuci mobil sedang</p>
+                    <p>Crv, Hrv, mobilio, civic</p>
+                    <p>Rp. 45.000</p>
+                </div>
+
+                <!-- div button -->
+                <div class="button">
+                    <button class="button_stretch btn btn-secondary">Pilih Paket</button>
+                </div>
+                
+            </div>
+
+            <!-- kotak ketiga -->
+            <div class="textbox">
+
+                <!-- div teks -->
+                <div class="text">
+                    <img src="assets/2022_Toyota_Fortuner_2.8_VRZ_GR_Sport_4x2_GUN166R_(20220428).jpg" alt="Toyota Fortuner" class="imgbox">
+                    <p>Cuci mobil besar</p>
+                    <p>Fortuner, pajero, robicorn</p>
+                    <p>Rp. 50.000</p>
+                </div>
+
+                <!-- div button -->
+                <div class="button">
+                    <button class="button_stretch btn btn-secondary">Pilih Paket</button>
+                </div>
+                
+            </div>
+
+            <!-- kotak keempat -->
+            <div class="textbox">
+
+                <!-- div teks -->
+                <div class="text">
+                    <img src="assets/2023_Toyota_Alphard_Hybrid_(AH40)_1.jpg" alt="Toyota Alphard" class="imgbox">
+                    <p>Cuci mobil sangat besar</p>
+                    <p>Alphard, lexus, vellfire</p>
+                    <p>Rp. 55.000</p>
+                </div>
+
+                <!-- div button -->
+                <div class="button">
+                    <button class="button_stretch btn btn-secondary">Pilih Paket</button>
+                </div>
+                
+            </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        @copyright Muhammad Maulidhan Pahlevi
+    </footer>
+</body>
+</html>
+
+

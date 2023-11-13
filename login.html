@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+    /* style supaya placeholder untuk input password dan username menjadi ketengah */
+    input[type="text"]::placeholder {  
+        text-align: center;
+    }
+
+    input[type="password"]::placeholder {  
+        text-align: center;
+    }
+
+    .conlogin {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        height: 100vh; 
+        text-align: center; 
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .button {
+        width: 45%;
+    }
+
+    body {
+        margin: 0px 6%;
+        background-image: url("assets/WhatsApp Image 2023-11-06 at 09.35.13.jpeg");
+        background-position: left bottom;
+    }
+
+    p {
+        color: white;
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- div untuk menampung halaman login -->
+    <div class="conlogin">
+        <img src="assets/car-wash-logo-free-vector.jpg" alt="carwash logo" style="height: 18%; border-radius: 50%; border-style: solid; margin-bottom: 15px; border-width: 2px;">
+        <p>SELAMAT DATANG DI CAR WASH <br> SMKN 2 BANJARMASIN</p>
+
+        <!-- div untuk menampung input -->
+        <div style="background-color: grey; padding: 20px; border-radius: 5%; width: 45vh;">
+
+            <!-- div untuk input teks dan password -->
+            <div style="display: flex; flex-direction: column; margin: 15% 0px;">
+                <input class="form-control" type="text" placeholder="Username" form="login" style="margin-bottom: 20px; height: 25px;">
+                <input class="form-control" type="password" placeholder="Password" form="login" style="height: 25px;">
+            </div>
+
+            <!-- div untuk button -->
+            <div style="display: flex; justify-content: space-between; height: 7vh;">
+                <button class="button btn btn-light">Register</button>
+                <input class="button btn btn-light" type="submit" value="Login" form="login">
+            </div>
+
+        </div>
+    </div>
+
+    <form action="landing.html" id="login"></form>
+</body>
+</html>
+
